@@ -26,3 +26,22 @@ ACCOUNT: siddharth.vishwanath@sigmoidanalytics.com
 To set the active account, run:
     $ gcloud config set account `ACCOUNT`
 ```
+
+
+### Gcloud IAM Commands
+```javascript
+# Export a project ID variable
+export PROJECT_ID=devops-iam-demo-<date>
+
+# Create a new project via CLI
+gcloud projects create $PROJECT_ID
+
+# Set the active config to this project
+gcloud config set project $PROJECT_ID
+
+# Grant IAM role to a user (example: Viewer role)
+gcloud projects add-iam-policy-binding $PROJECT_ID \
+  --member="user:<email>" \
+  --role="roles/viewer"
+
+```
