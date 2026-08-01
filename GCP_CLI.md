@@ -29,7 +29,7 @@ To set the active account, run:
 
 
 ### Gcloud IAM Commands
-```javascript
+```bash
 # Export a project ID variable
 export PROJECT_ID=devops-iam-demo-<date>
 
