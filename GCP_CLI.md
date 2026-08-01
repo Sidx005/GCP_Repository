@@ -14,3 +14,15 @@ universe_domain = googleapis.com
 [metrics]
 environment = devshell
 ```
+
+
+Command: gcloud auth list
+```code
+Credentialed Accounts
+
+ACTIVE: *
+ACCOUNT: siddharth.vishwanath@sigmoidanalytics.com
+
+To set the active account, run:
+    $ gcloud config set account `ACCOUNT`
+```
