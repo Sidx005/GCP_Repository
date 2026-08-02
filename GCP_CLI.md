@@ -43,5 +43,7 @@ gcloud config set project $PROJECT_ID
 gcloud projects add-iam-policy-binding $PROJECT_ID \
   --member="user:<email>" \
   --role="roles/viewer"
+eg: gcloud projects add-iam-policy-binding $PROJECT_ID --member="user:desaisiddharth1246@gmail.com" --role="roles/viewer"
 
 ```
+
