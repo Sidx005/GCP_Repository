@@ -67,3 +67,60 @@ Age > 365 days → Delete
 
 <img width="536" height="532" alt="image" src="https://github.com/user-attachments/assets/f84a158f-a9df-481f-aa9a-40f5faf19c8c" />
 
+
+
+## Access Control
+
+## GCS Access Control — Short Notes
+
+### 1. Two Access Control Types
+
+| Type             | Meaning                                         |
+| ---------------- | ----------------------------------------------- |
+| **Uniform**      | Same access policy for all objects in a bucket  |
+| **Fine-grained** | Access can be configured for individual objects |
+
+### 2. Fine-Grained Access
+
+* Uses **object-level ACLs**.
+* Each object can have different permissions.
+* Example:
+
+  ```text
+  file1.jpg → Public
+  file2.jpg → Private
+  file3.jpg → User A (Reader)
+  ```
+* Useful when different objects need different access.
+
+### 3. Uniform Access
+
+* Access is managed at the **bucket level**.
+* Object-level ACLs are disabled.
+* All objects follow the bucket's IAM permissions.
+* Recommended by Google as a **best practice** because it is simpler to manage.
+
+### 4. Common Permissions
+
+* **Reader** → Can read/access the object.
+* **Owner** → Full control over the object.
+* **All users (`allUsers`)** → Anyone on the internet.
+* **All authenticated users (`allAuthenticatedUsers`)** → Any authenticated Google account.
+
+### Key Difference
+
+```text
+Fine-grained → Object-level access
+Uniform      → Bucket-level IAM access
+```
+
+**Remember:** When switching to **Uniform**, existing object ACLs are removed/ignored, so individual object permissions can no longer be managed through ACLs.
+
+
+<img width="527" height="375" alt="image" src="https://github.com/user-attachments/assets/629c40fe-28fe-4bb8-9eef-55f8c812ad0d" />
+
+
+Remove all users reading permission i.e dont make it public
+
+<img width="646" height="442" alt="image" src="https://github.com/user-attachments/assets/74d0a17f-67ba-430a-91c2-808d744f7536" />
+
