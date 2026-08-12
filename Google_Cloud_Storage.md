@@ -124,3 +124,23 @@ Remove all users reading permission i.e dont make it public
 
 <img width="646" height="442" alt="image" src="https://github.com/user-attachments/assets/74d0a17f-67ba-430a-91c2-808d744f7536" />
 
+
+
+
+
+## Signed URLS
+
+1. Use service account
+<img width="749" height="398" alt="image" src="https://github.com/user-attachments/assets/681b4159-1721-40c1-8aa6-31f6807589ad" />
+
+
+<img width="816" height="416" alt="image" src="https://github.com/user-attachments/assets/0de06962-3798-488a-98c2-6ff1f81af343" />
+
+
+### Use the seice-key.json
+<img width="559" height="317" alt="image" src="https://github.com/user-attachments/assets/e6289eb8-695b-4028-9e6e-f39392811743" />
+
+
+
+<img width="713" height="217" alt="image" src="https://github.com/user-attachments/assets/7754f997-14e7-4ef3-b36d-2c76a6cb1db7" />
+
